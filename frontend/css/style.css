@@ -1,0 +1,202 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+    color: #222;
+    min-height: 100vh;
+}
+
+
+.container {
+    width: 90%;
+    max-width: 700px;
+    margin: 60px auto;
+}
+
+
+/* Header */
+
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.header h1 {
+    font-size: 36px;
+    margin-bottom: 8px;
+}
+
+.header p {
+    color: #666;
+}
+
+
+/* Add Task */
+
+.add-task {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+#taskInput {
+    flex: 1;
+    padding: 14px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+#taskInput:focus {
+    outline: none;
+    border-color: #333;
+}
+
+
+#addButton {
+    padding: 14px 22px;
+    border: none;
+    border-radius: 8px;
+    background: #222;
+    color: white;
+    cursor: pointer;
+}
+
+#addButton:hover {
+    background: #444;
+}
+
+
+/* Statistics */
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin-bottom: 25px;
+}
+
+.stat {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.stat span {
+    display: block;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.stat small {
+    color: #777;
+}
+
+
+/* Filters */
+
+.filters {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.filter {
+    border: none;
+    background: transparent;
+    padding: 8px 15px;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.filter.active {
+    background: #222;
+    color: white;
+}
+
+
+/* Tasks */
+
+#taskList {
+    list-style: none;
+}
+
+
+.task {
+    background: white;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+
+.task-text {
+    flex: 1;
+    font-size: 16px;
+}
+
+
+.task.completed .task-text {
+    text-decoration: line-through;
+    color: #999;
+}
+
+
+.complete-button {
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+}
+
+
+.delete-button {
+    border: none;
+    background: transparent;
+    color: #d33;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+
+/* Empty state */
+
+.empty-message {
+    text-align: center;
+    color: #888;
+    padding: 30px;
+}
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    .container {
+        margin: 30px auto;
+    }
+
+    .add-task {
+        flex-direction: column;
+    }
+
+    #addButton {
+        width: 100%;
+    }
+
+    .stats {
+        grid-template-columns: 1fr;
+    }
+
+}
