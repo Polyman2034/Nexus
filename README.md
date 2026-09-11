@@ -95,3 +95,5 @@ Nexus provides an overview of:
               HTML / CSS / JS     FastAPI
                      │               │
                      └──── REST API ─┘
+```
+<hr> <p align="center"> <i>“Learn. Build. Experiment. Improve.”</i> 🚀 </p> `
