@@ -96,4 +96,4 @@ Nexus provides an overview of:
                      │               │
                      └──── REST API ─┘
 ```
-<hr> <p align="center"> <i>“Learn. Build. Experiment. Improve.”</i> 🚀 </p> `
+<hr> <p align="center"> <i>“Learn. Build. Experiment. Improve.”</i> 🚀 </p> 
